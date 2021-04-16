@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <!-- Choose background -->
+    <div class="choose_container">
+        <p>Your own background!</p>
+        <input placeholder="Your background..." class="chooseBackGround" type="text">
+        <button class="chooseBtn">Complete</button>
+    </div>
+
+    <header>
+        <section class="header_container">
+            <div class="header_upper">
+                <div>
+                    <select class="form-select theme-selector" aria-label="Default select example">
+                        <option style="background: rgb(155, 155, 155) !important;" value="default">Default</option>
+                        <option style="background: rgb(155, 155, 155) !important;" value="gradient1">Gradient1</option>
+                        <option style="background: rgb(155, 155, 155) !important;" value="gradient2">Gradient2</option>
+                        <option style="background: rgb(155, 155, 155) !important;" value="custom">Custom</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>To Do <span>App</span></h2>
+                </div>
+                <div>
+                    <button class="signOutBtn">Sign out</button>
+                </div>
+            </div>
+
+            <div class="register_container">
+                <div class="register_title">
+                    <h2>Add New Task</h2>
+                </div>
+                <div class="register_body">
+                    <div class="mb-4">
+                        <input placeholder="Title..." type="text" class="title">
+                    </div>
+                    <div>
+                        <textarea class="description" placeholder="Description..." name="feedback" cols="30" rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="register_footer">
+                    <button class="submitBtn">Create Task</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+     
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

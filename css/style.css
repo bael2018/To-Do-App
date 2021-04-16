@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* empty */
+
+.empty{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    padding: 15px 0;
+    color: rgb(121, 121, 121);
+    text-align: center;
+    z-index: 10;
+    transform: scale(.8);
+    transition: .3s;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+.empty div{
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    right: 10px;
+    top: -10px;
+}
+
+
+/* choose_container */
+
+.choose_container{
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    transition: .5s;
+    left: 35%;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.8);
+    top: 30%;
+    padding: 40px 30px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.651);
+    z-index: 10;
+}
+
+.choose_container.appear{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+}
+
+.choose_container p{
+    margin-top: 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}       
+
+.choose_container input{
+    width: 96%;
+    border: none;
+    padding: 12px 2%;
+    color: white;
+    outline: none;
+    margin-bottom: 30px;
+    background: none;
+    border-bottom: 1px solid white;
+}
+
+.chooseBtn{
+    border: none;
+    outline: none !important;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s;
+    padding: 7px 25px;
+    border-radius: 10px;
+    background: none;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.651);
+    color: white;
+}
+
+.chooseBtn:hover{
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 1);
+}
+
+::-webkit-input-placeholder {color: rgb(255, 255, 255); font-size: 18px;}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header_container{
+    height: 100%;
+    width: 100%;
+}
+
+/* header_upper */
+
+.header_upper{
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.651);
+}
+
+.header_upper div h2{
+    color: white;
+}
+
+.header_upper div h2 span{
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.651);
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 0;
+}
+
+.theme-selector{
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    background: none;
+    padding: 5px 10px;
+    color: white;
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.651);
+}
+
+.signOutBtn{
+    background: none;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none !important; 
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.5);
+}
+
+.signOutBtn:hover{
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 1);
+}
+
+
+/* register_container */
+
+
+.register_container{
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgba(255, 255, 255, 0.5);
+
+    animation: upMove 3s linear infinite alternate;
+}
+
+.register_container:hover{
+    animation-play-state: paused;
+}
+
+@keyframes upMove {
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+.register_title{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.register_body div input{
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: .3s;
+    background: none;
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.register_body div textarea{
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: .3s;
+    background: none;
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.register_body div input:hover,
+.register_body div input:focus,
+.register_body div textarea:hover,
+.register_body div textarea:focus{
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 1);
+}
+
+.register_footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register_footer button{
+    background: none;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none !important; 
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.5);
+}
+
+.register_footer button:hover{
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 1);
+}
+
