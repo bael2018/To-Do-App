@@ -7,6 +7,13 @@ const body = document.body
 const chooseBg = document.querySelector('.choose_container')
 const newBg = document.querySelector('.chooseBackGround')
 const chooseBtn = document.querySelector('.chooseBtn')
+const unchosen = document.querySelector('.unchosen')
+
+unchosen.addEventListener('click' , e => {
+    e.preventDefault(),
+    
+    chooseBg.classList.remove('appear')
+})
 
 selector.addEventListener('change' , e => {
     e.preventDefault();
@@ -53,18 +60,6 @@ window.addEventListener('load' , () => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Checking Autorization
 
 window.addEventListener('load' , () => {
@@ -78,4 +73,11 @@ const signOutBtn = document.querySelector('.signOutBtn')
 signOutBtn.addEventListener('click' , () =>{
     localStorage.setItem('isAuth' , 'false')
     window.location.reload()
+})
+
+// DissAppearBtn
+
+const disappear = document.querySelector('.disappear')
+disappear.addEventListener('click' , e => {
+    e.preventDefault()
 })

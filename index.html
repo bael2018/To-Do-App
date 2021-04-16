@@ -6,14 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5c459b5eb0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
     <!-- Choose background -->
+
     <div class="choose_container">
         <p>Your own background!</p>
         <input placeholder="Your background..." class="chooseBackGround" type="text">
-        <button class="chooseBtn">Complete</button>
+        <div>
+            <button class="chooseBtn">Complete</button>
+            <button class="unchosen">Later</button>
+        </div>
+    </div>
+
+    <!-- Empty Input -->
+
+    <div class="fill_container">
+        <h2>Please, Fill the input</h2>
+        <div class="disappear">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <!-- deleteAsk -->
+
+    <div class="deleteContainer">
+        <h2>Are you sure?</h2>
+
+        <div>
+            <button class="yesBtn">YES</button>
+            <button class="noBtn">NO</button>
+        </div>
+    </div>
+
+    <!-- completeAsk -->
+
+    <div class="completeContainer">
+        <div>
+            <input class="newTitle" placeholder="NewTitle" type="text">
+        </div>
+        <div>
+            <textarea class="newContent" placeholder="NewText" name='feedback' cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <button class="submit">Add</button>
+            <button class="noSubmit">Later</button>
+        </div>
     </div>
 
     <header>
@@ -27,7 +67,7 @@
                         <option style="background: rgb(155, 155, 155) !important;" value="custom">Custom</option>
                     </select>
                 </div>
-                <div>
+                <div class="hide">
                     <h2>To Do <span>App</span></h2>
                 </div>
                 <div>
@@ -55,9 +95,12 @@
     </header>
 
     <main>
-     
+        <section class="main_block1"></section>
+
     </main>
 
     <script src="js/script.js"></script>
+    <script src="js/addcards.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 </body>
 </html>
