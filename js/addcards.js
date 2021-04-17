@@ -23,8 +23,8 @@ submitBtn.addEventListener('click' , e => {
             ...todos,
             {
                 title: title.value,
-                content: content.value,
                 date: CurrentTime(),
+                content: content.value,
                 completed: false
             }
         ]))
@@ -49,7 +49,7 @@ window.addEventListener('load' , () => {
         })
         localStorage.setItem('todos' , JSON.stringify(newTodos))
         
-        const template = newTodos.reverse().reduce((total , { title , content , date , completed , id }) => {
+        const template = newTodos.reverse().reduce((total , { title , date , content , completed , id }) => {
             if(completed){
                 return total += `<div class="block1_container completed">${cardTemplate(title , date , content , id)}</div>`
             }else{
@@ -62,7 +62,7 @@ window.addEventListener('load' , () => {
 
 
 function cardTemplate(title , date , content , id){
-    if(content.length >= 250){
+    if(content.length >= 200){
         return `
         <div class="block1_left">
             <div class="block1_left_header">
@@ -70,7 +70,7 @@ function cardTemplate(title , date , content , id){
                 <p>${date}</p>
             </div>
             <div class="block1_left_body shorted">
-                <p>${content}</p>
+                ${content}
             </div>
         </div>
         <div class="block1_right">
@@ -87,7 +87,7 @@ function cardTemplate(title , date , content , id){
                 <p>${date}</p>
             </div>
             <div class="block1_left_body">
-                <p>${content}</p>
+                ${content}  
             </div>
         </div>
         <div class="block1_right">
