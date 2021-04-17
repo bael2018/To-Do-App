@@ -303,7 +303,7 @@ header{
 }
 
 .block1_left{
-    width: 80%;
+    width: 80% !important;
 }
 
 .block1_left_header{
@@ -327,6 +327,7 @@ header{
     flex-direction: column !important;
     flex-wrap: wrap !important;
     padding: 30px;
+    width: 100% !important;
 }
 
 .block1_left_header h2{
@@ -617,7 +618,7 @@ header{
     }
 
     .block1_left{
-        width: 100%;
+        width: 100% !important;
         border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     }
 
@@ -819,6 +820,10 @@ header{
         box-shadow: none;
         left: 0;
         width: 100%;
+    }
+
+    .block1_left_body{
+        padding: 15px;
     }
 }
 
