@@ -316,8 +316,7 @@ header{
 }
 
 .shorted{
-    overflow-y: scroll !important;
-    overflow-x: hidden !important;
+    overflow: scroll;
 }
 
 .block1_left_body{

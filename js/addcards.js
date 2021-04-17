@@ -62,7 +62,7 @@ window.addEventListener('load' , () => {
 
 
 function cardTemplate(title , date , content , id){
-    if(content.length >= 200){
+    if(content.length >= 150){
         return `
         <div class="block1_left">
             <div class="block1_left_header">
